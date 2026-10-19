@@ -4,16 +4,16 @@ public class DobleFor {
         int columna = 0;
 
         for (int i = 0; i < 10; i++) {
-            System.out.print(fila + " ");
-            ++fila;
+            System.out.print(fila + "  ");
             for (int j = 0; j < 10; j++) {
                 if (i == 0) {
-                    System.out.print(fila + "" + columna);
+                    System.out.print(fila);
                 }
-                System.out.print(columna + " ");
+                System.out.print((j < 10 - 1) ? columna + " " : columna);
                 ++columna;
             }
             System.out.println();
+            ++fila;
         }
     }
 }
