@@ -1,15 +1,11 @@
 public class Precio {
-    private int euro;
+    double euro;
 
-    public Precio(int euro) {
+    public void setEuro(double euro) {
         this.euro = euro;
     }
 
-    public void setEuro(int euro) {
-        this.euro = euro;
-    }
-
-    public int getEuro() {
+    public double getEuro() {
         return euro;
     }
 }
