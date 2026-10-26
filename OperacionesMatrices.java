@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class OperacionesMatrices {
-
     public static void introducir(int[][] matriz, Scanner teclado) {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
@@ -69,29 +68,29 @@ public class OperacionesMatrices {
     }
 
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Filas de la primera matriz: ");
-        int filas1 = teclado.nextInt();
+        int filas1 = scanner.nextInt();
 
         System.out.print("Columnas de la primera matriz: ");
-        int columnas1 = teclado.nextInt();
+        int columnas1 = scanner.nextInt();
 
         int[][] matriz1 = new int[filas1][columnas1];
 
         System.out.println("Introduce los elementos de la primera matriz:");
-        introducir(matriz1, teclado);
+        introducir(matriz1, scanner);
 
         System.out.print("Filas de la segunda matriz: ");
-        int filas2 = teclado.nextInt();
+        int filas2 = scanner.nextInt();
 
         System.out.print("Columnas de la segunda matriz: ");
-        int columnas2 = teclado.nextInt();
+        int columnas2 = scanner.nextInt();
 
         int[][] matriz2 = new int[filas2][columnas2];
 
         System.out.println("Introduce los elementos de la segunda matriz:");
-        introducir(matriz2, teclado);
+        introducir(matriz2, scanner);
 
         System.out.println("\nPrimera matriz:");
         imprimir(matriz1);
@@ -123,6 +122,6 @@ public class OperacionesMatrices {
             );
         }
 
-        teclado.close();
+        scanner.close();
     }
 }
